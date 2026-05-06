@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-ro="Galerie | Soul Indian Cuisine" data-en="Gallery | Soul Indian Cuisine">Galerie | Soul Indian Cuisine</title>
+  <meta name="description" data-ro="Galeria Soul Indian Cuisine cu preparate delicioase si atmosfera indiana autentica." data-en="The Soul Indian Cuisine gallery with delicious dishes and authentic Indian ambience." content="Galeria Soul Indian Cuisine cu preparate delicioase si atmosfera indiana autentica." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260506-32" />
+</head>
+<body class="page-gallery">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Soul Indian Cuisine" class="logo" />
+        <div class="brand-text">
+          <span class="brand-name">Soul</span>
+          <span class="brand-sub">Indian Cuisine</span>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#home" data-scroll-target="home" data-ro="Acasa" data-en="Home">Acasa</a>
+        <a href="index.html#reviews" data-scroll-target="reviews" data-ro="Recenzii" data-en="Reviews">Recenzii</a>
+        <a href="index.html#order" data-scroll-target="order" data-ro="Comanda" data-en="Order">Comanda</a>
+        <a href="index.html#contact" data-scroll-target="contact" data-ro="Contact" data-en="Contact">Contact</a>
+        <a href="menu.html" data-ro="Meniu" data-en="Menu">Meniu</a>
+        <a href="gallery.html" class="active" data-ro="Galerie" data-en="Gallery">Galerie</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="ro">RO</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="admin.html" class="admin-icon-link" data-admin-link aria-label="Admin">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12.2a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2Z"/><path d="M4.8 20.2c.8-3.5 3.4-5.7 7.2-5.7s6.4 2.2 7.2 5.7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner page-banner-gallery">
+      <div class="container">
+        <div class="banner-copy">
+          <span class="section-label" data-ro="Soul Indian Cuisine" data-en="Soul Indian Cuisine">Soul Indian Cuisine</span>
+          <h1 data-ro="Galerie" data-en="Gallery">Galerie</h1>
+          <p data-ro="O selectie de preparate reprezentative pentru Soul Indian Cuisine, pregatite cu ingrediente atent alese si prezentate in stilul autentic al bucatariei indiene." data-en="A selection of representative dishes from Soul Indian Cuisine, prepared with carefully chosen ingredients and presented in the authentic style of Indian cuisine.">O selectie de preparate reprezentative pentru Soul Indian Cuisine, pregatite cu ingrediente atent alese si prezentate in stilul autentic al bucatariei indiene.</p>
+          <div class="page-banner-actions">
+            <a class="button button-primary" href="menu.html" data-ro="Vezi meniul" data-en="View menu">Vezi meniul</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gallery">
+      <div class="container">
+        <div class="gallery-intro">
+          <span class="section-label" data-ro="Galerie foto" data-en="Photo gallery">Galerie foto</span>
+          <h2 data-ro="Preparatele noastre" data-en="Our dishes">Preparatele noastre</h2>
+        </div>
+
+        <div class="gallery-slider" data-gallery-slider>
+          <button type="button" class="gallery-slider-control gallery-slider-prev" data-gallery-prev aria-label="Previous image">
+            <span aria-hidden="true">&lsaquo;</span>
+          </button>
+
+          <div class="gallery-grid" data-gallery-track>
+            <button type="button" class="gallery-card gallery-large" data-gallery-card data-title-ro="Selectie Soul Indian Cuisine" data-title-en="Soul Indian Cuisine Selection">
+              <img src="assets/gallery-spread.jpg" alt="Soul Indian Cuisine selection" />
+              <span class="gallery-caption" data-ro="Selectie Soul Indian Cuisine" data-en="Soul Indian Cuisine Selection">Selectie Soul Indian Cuisine</span>
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Chicken Tikka Masala" data-title-en="Chicken Tikka Masala">
+              <img src="assets/dish-tikka.jpg" alt="Chicken Tikka Masala" loading="lazy" />
+              <span class="gallery-caption" data-ro="Chicken Tikka Masala" data-en="Chicken Tikka Masala">Chicken Tikka Masala</span>
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Biryani" data-title-en="Biryani">
+              <img src="assets/dish-biryani.jpg" alt="Biryani" loading="lazy" />
+              <span class="gallery-caption" data-ro="Biryani" data-en="Biryani">Biryani</span>
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Palak Paneer" data-title-en="Palak Paneer">
+              <img src="assets/dish-paneer.jpg" alt="Palak Paneer" loading="lazy" />
+              <span class="gallery-caption" data-ro="Palak Paneer" data-en="Palak Paneer">Palak Paneer</span>
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Garlic Naan" data-title-en="Garlic Naan">
+              <img src="assets/dish-naan.jpg" alt="Garlic Naan" loading="lazy" />
+              <span class="gallery-caption" data-ro="Garlic Naan" data-en="Garlic Naan">Garlic Naan</span>
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Jeera Rice" data-title-en="Jeera Rice">
+              <img src="assets/dish-rice.jpg" alt="Jeera Rice" loading="lazy" />
+              <span class="gallery-caption" data-ro="Jeera Rice" data-en="Jeera Rice">Jeera Rice</span>
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Gulab Jamun" data-title-en="Gulab Jamun">
+              <img src="assets/dish-gulab.jpg" alt="Gulab Jamun" loading="lazy" />
+              <span class="gallery-caption" data-ro="Gulab Jamun" data-en="Gulab Jamun">Gulab Jamun</span>
+            </button>
+          </div>
+
+          <button type="button" class="gallery-slider-control gallery-slider-next" data-gallery-next aria-label="Next image">
+            <span aria-hidden="true">&rsaquo;</span>
+          </button>
+
+          <div class="gallery-slider-dots" data-gallery-dots aria-label="Gallery slides"></div>
+        </div>
+
+        <div class="gallery-intro gallery-intro-secondary">
+          <span class="section-label" data-ro="Interior si atmosfera" data-en="Interior and atmosphere">Interior si atmosfera</span>
+          <h2 data-ro="Locatia noastra" data-en="Our location">Locatia noastra</h2>
+        </div>
+
+        <div class="gallery-slider" data-gallery-slider>
+          <button type="button" class="gallery-slider-control gallery-slider-prev" data-gallery-prev aria-label="Previous image">
+            <span aria-hidden="true">&lsaquo;</span>
+          </button>
+
+          <div class="gallery-grid" data-gallery-track>
+            <button type="button" class="gallery-card gallery-large" data-gallery-card data-title-ro="Locatie" data-title-en="Location">
+              <img src="assets/location-exterior.png" alt="Restaurant entrance" loading="lazy" />
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Locatie" data-title-en="Location">
+              <img src="assets/location-interior.png" alt="Dining room" loading="lazy" />
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Locatie" data-title-en="Location">
+              <img src="assets/location-booth.png" alt="Cozy corner table" loading="lazy" />
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Locatie" data-title-en="Location">
+              <img src="assets/location-bar.png" alt="Bar and welcome area" loading="lazy" />
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Locatie" data-title-en="Location">
+              <img src="assets/location-lounge.png" alt="Restaurant lounge" loading="lazy" />
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Locatie" data-title-en="Location">
+              <img src="assets/location-table.png" alt="Window table setup" loading="lazy" />
+            </button>
+
+            <button type="button" class="gallery-card gallery-item" data-gallery-card data-title-ro="Locatie" data-title-en="Location">
+              <img src="assets/location-corridor.png" alt="Restaurant corridor" loading="lazy" />
+            </button>
+          </div>
+
+          <button type="button" class="gallery-slider-control gallery-slider-next" data-gallery-next aria-label="Next image">
+            <span aria-hidden="true">&rsaquo;</span>
+          </button>
+
+          <div class="gallery-slider-dots" data-gallery-dots aria-label="Location slides"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="gallery-lightbox" data-gallery-lightbox hidden>
+    <div class="gallery-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="gallery-lightbox-title">
+      <button type="button" class="gallery-lightbox-close" data-gallery-close aria-label="Close image">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <img class="gallery-lightbox-image" src="" alt="" />
+      <div class="gallery-lightbox-footer">
+        <span class="gallery-lightbox-kicker" data-ro="Soul Indian Cuisine" data-en="Soul Indian Cuisine">Soul Indian Cuisine</span>
+        <h2 class="gallery-lightbox-title" id="gallery-lightbox-title" data-ro="Preparat" data-en="Dish">Preparat</h2>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">Soul <span>Indian Cuisine</span></div>
+      <div class="footer-socials" aria-label="Social media">
+        <a class="footer-social-link" href="#" target="_blank" rel="noreferrer" data-site-instagram hidden aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Z"/><path d="M12 8.2A3.8 3.8 0 1 1 12 15.8A3.8 3.8 0 0 1 12 8.2Z"/><path d="M17.4 6.6h.01"/></svg>
+        </a>
+        <a class="footer-social-link" href="#" target="_blank" rel="noreferrer" data-site-facebook hidden aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5h-2.8C10.9 5 10 6.6 10 8.1V10H8v3.4h2V21h3.7v-7.6h2.5l.4-3.4h-2.9V8.8c0-.2.1-.3.3-.3Z"/></svg>
+        </a>
+      </div>
+      <div>&copy; 2026 Soul Indian Cuisine &middot; Sibiu</div>
+    </div>
+  </footer>
+  <script src="script.js?v=20260506-23" defer></script>
+</body>
+</html>

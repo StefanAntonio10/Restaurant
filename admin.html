@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-ro="Admin | Soul Indian Cuisine" data-en="Admin | Soul Indian Cuisine">Admin | Soul Indian Cuisine</title>
+  <meta name="description" content="Admin Soul Indian Cuisine." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260506-33" />
+</head>
+<body class="page-admin">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Soul Indian Cuisine" class="logo" />
+        <div class="brand-text">
+          <span class="brand-name">Soul</span>
+          <span class="brand-sub">Indian Cuisine</span>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#home" data-scroll-target="home" data-ro="Acasa" data-en="Home">Acasa</a>
+        <a href="index.html#reviews" data-scroll-target="reviews" data-ro="Recenzii" data-en="Reviews">Recenzii</a>
+        <a href="index.html#order" data-scroll-target="order" data-ro="Comanda" data-en="Order">Comanda</a>
+        <a href="index.html#contact" data-scroll-target="contact" data-ro="Contact" data-en="Contact">Contact</a>
+        <a href="menu.html" data-ro="Meniu" data-en="Menu">Meniu</a>
+        <a href="gallery.html" data-ro="Galerie" data-en="Gallery">Galerie</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="ro">RO</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="admin.html" class="admin-icon-link active" data-admin-link aria-label="Admin">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12.2a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2Z"/><path d="M4.8 20.2c.8-3.5 3.4-5.7 7.2-5.7s6.4 2.2 7.2 5.7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <section class="admin-shell container">
+      <div class="admin-page-heading">
+        <span class="section-label" data-ro="Admin" data-en="Admin">Admin</span>
+        <h1 data-ro="Admin" data-en="Admin">Admin</h1>
+      </div>
+
+      <div class="admin-settings-grid">
+        <section class="admin-settings-card admin-phone-card">
+          <div class="admin-settings-header">
+            <span class="section-label" data-ro="Setari site" data-en="Site settings">Setari site</span>
+            <h2 data-ro="Numar de telefon" data-en="Phone number">Numar de telefon</h2>
+          </div>
+
+          <form class="admin-settings-form" data-admin-phone-form>
+            <label>
+              <span data-ro="Numar afisat pe site" data-en="Phone number shown on site">Numar afisat pe site</span>
+              <input type="tel" name="phone_display" autocomplete="off" placeholder="0770 653 482" required />
+            </label>
+
+            <div class="admin-form-actions">
+              <button type="submit" class="button button-primary" data-ro="Salveaza" data-en="Save">Salveaza</button>
+              <span class="admin-info-control" tabindex="0" aria-label="Informatii despre actualizarea numarului">
+                <span aria-hidden="true">i</span>
+                <span class="admin-info-tooltip" role="tooltip" data-ro="Aceasta actiune actualizeaza numarul de telefon afisat si linkurile de apel sau WhatsApp pe toate paginile site-ului." data-en="This action updates the displayed phone number and the call or WhatsApp links across every site page.">Aceasta actiune actualizeaza numarul de telefon afisat si linkurile de apel sau WhatsApp pe toate paginile site-ului.</span>
+              </span>
+            </div>
+
+            <p class="admin-form-message" data-admin-form-message></p>
+          </form>
+        </section>
+
+        <section class="admin-settings-card admin-hours-card">
+          <div class="admin-settings-header">
+            <span class="section-label" data-ro="Program" data-en="Hours">Program</span>
+            <h2 data-ro="Ore de functionare" data-en="Opening hours">Ore de functionare</h2>
+          </div>
+
+          <form class="admin-settings-form" data-admin-hours-form>
+            <div class="admin-hours-table">
+              <div class="admin-hours-row admin-hours-row-head" aria-hidden="true">
+                <span data-ro="Ziua" data-en="Day">Ziua</span>
+                <span data-ro="Deschidere" data-en="Opening">Deschidere</span>
+                <span data-ro="Inchidere" data-en="Closing">Inchidere</span>
+                <span data-ro="Inchis" data-en="Closed">Inchis</span>
+              </div>
+
+              <div class="admin-hours-row" data-admin-hours-row data-day-index="1">
+                <span class="admin-hours-day" data-ro="Luni" data-en="Monday">Luni</span>
+                <input type="time" name="open_time_1" />
+                <input type="time" name="close_time_1" />
+                <label class="admin-closed-check"><input type="checkbox" name="is_closed_1" /> <span data-ro="Inchis" data-en="Closed">Inchis</span></label>
+              </div>
+
+              <div class="admin-hours-row" data-admin-hours-row data-day-index="2">
+                <span class="admin-hours-day" data-ro="Marti" data-en="Tuesday">Marti</span>
+                <input type="time" name="open_time_2" />
+                <input type="time" name="close_time_2" />
+                <label class="admin-closed-check"><input type="checkbox" name="is_closed_2" /> <span data-ro="Inchis" data-en="Closed">Inchis</span></label>
+              </div>
+
+              <div class="admin-hours-row" data-admin-hours-row data-day-index="3">
+                <span class="admin-hours-day" data-ro="Miercuri" data-en="Wednesday">Miercuri</span>
+                <input type="time" name="open_time_3" />
+                <input type="time" name="close_time_3" />
+                <label class="admin-closed-check"><input type="checkbox" name="is_closed_3" /> <span data-ro="Inchis" data-en="Closed">Inchis</span></label>
+              </div>
+
+              <div class="admin-hours-row" data-admin-hours-row data-day-index="4">
+                <span class="admin-hours-day" data-ro="Joi" data-en="Thursday">Joi</span>
+                <input type="time" name="open_time_4" />
+                <input type="time" name="close_time_4" />
+                <label class="admin-closed-check"><input type="checkbox" name="is_closed_4" /> <span data-ro="Inchis" data-en="Closed">Inchis</span></label>
+              </div>
+
+              <div class="admin-hours-row" data-admin-hours-row data-day-index="5">
+                <span class="admin-hours-day" data-ro="Vineri" data-en="Friday">Vineri</span>
+                <input type="time" name="open_time_5" />
+                <input type="time" name="close_time_5" />
+                <label class="admin-closed-check"><input type="checkbox" name="is_closed_5" /> <span data-ro="Inchis" data-en="Closed">Inchis</span></label>
+              </div>
+
+              <div class="admin-hours-row" data-admin-hours-row data-day-index="6">
+                <span class="admin-hours-day" data-ro="Sambata" data-en="Saturday">Sambata</span>
+                <input type="time" name="open_time_6" />
+                <input type="time" name="close_time_6" />
+                <label class="admin-closed-check"><input type="checkbox" name="is_closed_6" /> <span data-ro="Inchis" data-en="Closed">Inchis</span></label>
+              </div>
+
+              <div class="admin-hours-row" data-admin-hours-row data-day-index="0">
+                <span class="admin-hours-day" data-ro="Duminica" data-en="Sunday">Duminica</span>
+                <input type="time" name="open_time_0" />
+                <input type="time" name="close_time_0" />
+                <label class="admin-closed-check"><input type="checkbox" name="is_closed_0" /> <span data-ro="Inchis" data-en="Closed">Inchis</span></label>
+              </div>
+            </div>
+
+            <div class="admin-form-actions">
+              <button type="submit" class="button button-primary" data-ro="Salveaza" data-en="Save">Salveaza</button>
+            </div>
+
+            <p class="admin-form-message" data-admin-form-message></p>
+          </form>
+        </section>
+
+        <section class="admin-settings-card admin-links-card">
+          <div class="admin-settings-header">
+            <span class="section-label" data-ro="Linkuri" data-en="Links">Linkuri</span>
+            <h2 data-ro="Butoane externe" data-en="External buttons">Butoane externe</h2>
+          </div>
+
+          <form class="admin-settings-form" data-admin-links-form>
+            <label>
+              <span>Wolt</span>
+              <input type="url" name="wolt_url" autocomplete="off" placeholder="https://wolt.com/..." />
+            </label>
+
+            <label>
+              <span>Glovo</span>
+              <input type="url" name="glovo_url" autocomplete="off" placeholder="https://glovoapp.com/..." />
+            </label>
+
+            <label>
+              <span>Instagram</span>
+              <input type="url" name="instagram_url" autocomplete="off" placeholder="https://www.instagram.com/..." />
+            </label>
+
+            <label>
+              <span>Facebook</span>
+              <input type="url" name="facebook_url" autocomplete="off" placeholder="https://www.facebook.com/..." />
+            </label>
+
+            <div class="admin-form-actions">
+              <button type="submit" class="button button-primary" data-ro="Salveaza" data-en="Save">Salveaza</button>
+            </div>
+
+            <p class="admin-form-message" data-admin-form-message></p>
+          </form>
+        </section>
+
+        <section class="admin-settings-card admin-categories-card">
+          <div class="admin-settings-header">
+            <span class="section-label" data-ro="Meniu" data-en="Menu">Meniu</span>
+            <h2 data-ro="Categorii meniu" data-en="Menu categories">Categorii meniu</h2>
+          </div>
+
+          <div class="admin-category-add-box">
+            <button type="button" class="admin-category-add-button" data-add-category-open data-ro="Adauga categorie +" data-en="Add category +">Adauga categorie +</button>
+          </div>
+
+          <div class="admin-category-list" data-admin-category-list></div>
+          <p class="admin-form-message" data-admin-category-message></p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="admin-choice-modal" data-hours-conflict-modal hidden>
+    <div class="admin-choice-dialog" role="dialog" aria-modal="true" aria-labelledby="hours-conflict-title">
+      <span class="section-label" data-ro="Atentie" data-en="Warning">Atentie</span>
+      <h2 id="hours-conflict-title" data-ro="Program conflictual" data-en="Conflicting schedule">Program conflictual</h2>
+      <p data-hours-conflict-text>Ati selectat si un interval orar, dar si magazinul inchis pentru aceasta zi. Ce doriti sa pastrati?</p>
+      <div class="admin-choice-actions">
+        <button type="button" class="button button-secondary" data-hours-keep-schedule data-ro="Interval orar" data-en="Time interval">Interval orar</button>
+        <button type="button" class="button button-primary" data-hours-keep-closed data-ro="Inchis" data-en="Closed">Inchis</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-choice-modal" data-category-modal hidden>
+    <div class="admin-choice-dialog admin-category-dialog" role="dialog" aria-modal="true" aria-labelledby="category-modal-title">
+      <span class="section-label" data-ro="Categorie" data-en="Category">Categorie</span>
+      <h2 id="category-modal-title" data-ro="Adauga categorie" data-en="Add category">Adauga categorie</h2>
+      <form class="admin-settings-form" data-admin-category-form>
+        <label>
+          <span data-ro="Nume traditional" data-en="Traditional name">Nume traditional</span>
+          <input type="text" name="traditional_name" autocomplete="off" placeholder="Aperitif" />
+        </label>
+
+        <label>
+          <span data-ro="Nume in limba romana" data-en="Romanian name">Nume in limba romana</span>
+          <input type="text" name="romanian_name" autocomplete="off" placeholder="Aperitive" />
+        </label>
+
+        <label>
+          <span data-ro="Nume in limba engleza" data-en="English name">Nume in limba engleza</span>
+          <input type="text" name="english_name" autocomplete="off" placeholder="Starters" />
+        </label>
+
+        <p class="admin-form-message" data-admin-form-message></p>
+
+        <div class="admin-choice-actions">
+          <button type="button" class="button button-secondary" data-category-cancel data-ro="Anuleaza" data-en="Cancel">Anuleaza</button>
+          <button type="submit" class="button button-primary" data-ro="Salveaza" data-en="Save">Salveaza</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">Soul <span>Indian Cuisine</span></div>
+      <div class="footer-socials" aria-label="Social media">
+        <a class="footer-social-link" href="#" target="_blank" rel="noreferrer" data-site-instagram hidden aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Z"/><path d="M12 8.2A3.8 3.8 0 1 1 12 15.8A3.8 3.8 0 0 1 12 8.2Z"/><path d="M17.4 6.6h.01"/></svg>
+        </a>
+        <a class="footer-social-link" href="#" target="_blank" rel="noreferrer" data-site-facebook hidden aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5h-2.8C10.9 5 10 6.6 10 8.1V10H8v3.4h2V21h3.7v-7.6h2.5l.4-3.4h-2.9V8.8c0-.2.1-.3.3-.3Z"/></svg>
+        </a>
+      </div>
+      <div>&copy; 2026 Soul Indian Cuisine &middot; Sibiu</div>
+    </div>
+  </footer>
+  <script src="script.js?v=20260506-26" defer></script>
+</body>
+</html>
